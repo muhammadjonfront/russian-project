@@ -1,9 +1,13 @@
 /** @format */
 
 import React from "react";
+import { NavLink } from "react-router-dom";
+
 import "./Authorisation.scss";
 
 import logo from "..//..//Assets/Image/logo.svg";
+import profil from "..//..//Assets/Image/profil.svg";
+import keys from "..//..//Assets/Image/key.svg";
 
 function Authorisation() {
 	return (
@@ -19,28 +23,45 @@ function Authorisation() {
 				<form
 					className='author__form'
 					action=''>
-					
-					<input
-						className='author__input author__input__2'
-						type='email'
-						name=''
-						id=''
-						placeholder='Электронная почта'
-					/>
-					<input
-						className='author__input'
-						type='password'
-						name=''
-						id=''
-						placeholder='Пароль'
-					/>
-					<button className='author__btn'>Войти</button>
-					<a
+					<div className='author__block'>
+						<img
+							className='img img__profil'
+							src={profil}
+							alt=''
+							width={24}
+							height={24}
+						/>
+						<input
+							className='author__input author__input__2'
+							type='email'
+							name=''
+							id=''
+							placeholder='Электронная почта'
+						/>
+					</div>
+					<div className='author__block'>
+						<img className="img img__1"
+							src={keys}
+							alt=''
+						/>
+						<input
+							className='author__input'
+							type='password'
+							name=''
+							id=''
+							placeholder='Пароль'
+						/>
+					</div>
+					<NavLink to={"/"}>
+						<button className='author__btn'>Войти</button>
+					</NavLink>
+					<NavLink
+						to={"/register"}
 						className='author__link'
 						href='#link'>
 						Регистрация
-					</a>
-                    <a
+					</NavLink>
+					<a
 						className='author__link'
 						href='#link'>
 						Сброс пароля

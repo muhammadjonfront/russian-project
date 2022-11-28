@@ -1,11 +1,14 @@
 /** @format */
 
 .author {
-	width: 1317px;
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+	width: 100%;
 	margin: 0 auto;
-	text-align: center;
-	display: inline-block;
-	margin-top: 100px;
+	align-items: center;
+	justify-content: center;
+	padding-top: 180px;
 }
 
 .author__title {
@@ -21,6 +24,8 @@
 	flex-direction: column;
 	margin: 0 auto;
 	width: 300px;
+	text-align: center;
+	align-items: center;
 }
 
 .author__input {
@@ -28,11 +33,27 @@
 	border: 1px solid #000000;
 	border-radius: 15px;
 	padding: 10px 0;
-	padding-left: 17px;
+	padding-left: 50px;
+	width: 230px;
 
 	&__2 {
 		margin: 12px 0;
 	}
+}
+
+.author__block{
+	position: relative;
+	width: 280px;
+}
+
+.img{
+	position: absolute;
+	top: 17px;
+	left: 17px;
+}
+
+.img__1{
+	top: 6px;
 }
 
 .author__btn {

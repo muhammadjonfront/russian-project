@@ -39,11 +39,9 @@ img {
 .container {
   display: flex;
   align-items: flex-start;
-  max-width: 1330px;
+  max-width: 1360px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 5px;
-  padding-left: 10px;
   overflow-x: hidden;
 }
 
@@ -73,5 +71,5 @@ a {
 
 .center {
   display: flex;
-  max-width: 1310px;
+  max-width: 1360px;
 }
